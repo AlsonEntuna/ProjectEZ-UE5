@@ -9,6 +9,8 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
 
+#include "Kismet/GameplayStatics.h"
+
 //////////////////////////////////////////////////////////////////////////
 // AProjectEZCharacter
 
@@ -137,4 +139,12 @@ void AProjectEZCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+
+void AProjectEZCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+
+	APlayerController* playerController = UGameplayStatics::GetPlayerController(GetWorld(), 0);
+	playerController->SetShowMouseCursor(false);
 }
