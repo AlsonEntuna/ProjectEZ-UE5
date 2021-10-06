@@ -1,8 +1,8 @@
-#Important Notice
+# Important Notice
 Due to the **file size commit restrictions of GitHub**, I'll be migrating this repository to **Azure DevOps**.
 You can access the new repository here with this link: [Project-EZ Azure DevOps Repo](https://dev.azure.com/UnrealEngineLibrary/Project-EZ/_git/Project-EZ)
 
-# ProjectEZ-UE5
+## ProjectEZ-UE5
 A project case study learning about the new features of Unreal Engine 5
 
 This project aims to learn and understand the new features and technology that UE5 has to offer in terms of Tech.
